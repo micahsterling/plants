@@ -2,9 +2,15 @@ import React from 'react'
 
 const NavBar = () => {
   return (
-    <div>
-      <h1>navbar</h1>
-    </div>
+    <>
+      <Nav>
+        <NavbarContainer>
+          <NavLogo>
+            Plants
+          </NavLogo>
+        </NavbarContainer>
+      </Nav>
+    </>
   )
 }
 
