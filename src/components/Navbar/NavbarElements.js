@@ -38,3 +38,4 @@ export const NavLogo = styled(LinkR)`
   font-weight: bold;
   text-decorations: none;
 `
+
