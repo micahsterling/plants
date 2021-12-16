@@ -10,7 +10,7 @@ export const Nav = styled.nav`
   justify-content: center;
   align-items: center;
   font-size: 1rem;
-  positon: sticky;
+  position: sticky;
   top: 0;
   z-index: 10;
 
@@ -50,12 +50,14 @@ export const MobileIcon = styled.div`
     transform: translate(-100%, 60%);
     font-size: 1.8rem;
     cursor: pointer;
+    color: #fff;
   }
 ` 
 export const NavMenu = styled.ul`
   display: flex;
   align-items: center;
-  list-align: center;
+  list-style: none;
+  text-align: center;
   margin-right: -22px;
 
   @media screen and (max-width: 768px) {
@@ -67,7 +69,7 @@ export const NavItem = styled.li`
 `
 
 export const NavLinks = styled(LinkS)`
-  color: #fff:
+  color: #fff;
   display: flex;
   align-items: center;
   text-decoration: none;
