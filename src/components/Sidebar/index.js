@@ -1,5 +1,4 @@
 import React from 'react'
-import { NavMenu } from '../Navbar/NavbarElements'
 import { SidebarContainer, Icon, CloseIcon } from './SidebarElements'
 
 const Sidebar = () => {

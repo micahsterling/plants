@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import {FaTimes} from 'react-icons/fa'
+import {Link as LinkS} from 'react-scroll'
 
 export const SidebarContainer = styled.aside`
   position: fixed;
@@ -28,4 +29,24 @@ export const Icon = styled.div`
   font-size: 2rem;
   cursor: pointer;
   outline: none;
+`
+
+export const SidebarWrapper = styled.div`
+  color: #fff
+`
+export const SidebarLink = styled(LinkS)`
+  display: flex;
+  align-item: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  text-decoration: none;
+  list-style: none;
+  transition: 0.2s ease-in-out;
+  color: #fff;
+  cursor: pointer;
+
+  &:hover {
+    color: #01bf71;
+    transition: 0.2s ease-in-out;
+  }
 `
