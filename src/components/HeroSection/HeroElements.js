@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import {MdKeyboardArrowRight, MdArrowForward} from 'reaclt-icons/md'
 
 export const HeroContainer = styled.div`
   background: #0c0c0c;
@@ -61,4 +62,13 @@ export const HeroBtnWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+`
+export const ArrowForward = styled(MdArrowForward)`
+  margin-left: 8px;
+  font-size: 20px;
+` 
+
+export const ArrowRight = styled(MdKeyboardArrowRight)`
+  margin-left: 8px;
+  font-size: 20px;
 `
