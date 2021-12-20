@@ -35,6 +35,7 @@ export const Icon = styled.div`
 export const SidebarWrapper = styled.div`
   color: #fff
 `
+
 export const SidebarLink = styled(LinkS)`
   display: flex;
   align-item: center;
