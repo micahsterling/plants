@@ -55,3 +55,10 @@ export const HeroH1 = styled.h1`
     font-size: 32px
   }
 `
+
+export const HeroBtnWrapper = styled.div`
+  margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`
