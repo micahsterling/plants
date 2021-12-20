@@ -13,10 +13,10 @@ const Sidebar = () => {
             About
           </SidebarLink>
           <SidebarLink to="discover">
-            discover
+            Discover
           </SidebarLink>
           <SidebarLink to="services">
-            services
+            Services
           </SidebarLink>
         </SidebarMenu>
         <SideBtnWrap>
