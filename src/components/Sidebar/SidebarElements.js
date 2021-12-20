@@ -35,6 +35,16 @@ export const Icon = styled.div`
 export const SidebarWrapper = styled.div`
   color: #fff
 `
+export const SidebarMenu = styled.ul`
+  display: grid;
+  grid-template-colums: 1fr;
+  grid-template-rows: repeat(6. 80px);
+  text-align: center;
+
+  @media screen and (max-width: 480px) {
+    grid-tempalte-rows: repeat(6, 60px)
+  }
+`
 
 export const SidebarLink = styled(LinkS)`
   display: flex;
