@@ -40,3 +40,9 @@ export const Column2 = styled.div`
   padding: 0 15px;
   grid-area: col2;
 `
+
+export const TextWrapper = styled.div`
+  max-width: 540px;
+  padding-top: 0;
+  padding-bottom: 60px;
+`
