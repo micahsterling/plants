@@ -30,3 +30,13 @@ export const InfoRow = styled.div`
     grid-template-area: ${({imgStart}) => (imgStart ? `'col1' 'col2'` : `'col1 col1' 'col2 col2'` )}
   }
 `
+export const Column1 = styled.div`
+  margin-bottom: 15px;
+  padding: 0 15px;
+  grid-area: col1;
+`
+export const Column2 = styled.div`
+  margin-bottom: 15px;
+  padding: 0 15px;
+  grid-area: col2;
+`
