@@ -8,7 +8,7 @@ export const homeObjOne = {
   description: 'this is the description text',
   buttonLable: 'button',
   imgStart: false,
-  img: require('../../images/svg-1.svg'),
+  img: require('../../images/img3.JPG').default,
   alt: 'car',
   dark: true,
   primary: true,
