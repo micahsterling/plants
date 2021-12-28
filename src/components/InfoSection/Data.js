@@ -1,0 +1,16 @@
+export const homeObjOne = {
+  id: 'about',
+  lightBg: false,
+  lightText: true,
+  lightTextDesc: true,
+  topLine: 'Premium Bank',
+  headLine: 'Unlimited Transactions',
+  description: 'this is the description text',
+  buttonLable: 'button',
+  imgStart: false,
+  img: require('../../images/svg-1.svg'),
+  alt: 'car',
+  dark: true,
+  primary: true,
+  darkText: false,
+}
