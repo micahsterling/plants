@@ -19,7 +19,7 @@ export const SidebarContainer = styled.aside`
 `
 
 export const CloseIcon = styled(FaTimes)`
-  color: #fff
+  color: #fff;
 `
 
 export const Icon = styled.div`
@@ -33,7 +33,7 @@ export const Icon = styled.div`
 `
 
 export const SidebarWrapper = styled.div`
-  color: #fff
+  color: #fff;
 `
 export const SidebarMenu = styled.ul`
   display: grid;
@@ -42,13 +42,13 @@ export const SidebarMenu = styled.ul`
   text-align: center;
 
   @media screen and (max-width: 480px) {
-    grid-tempalte-rows: repeat(6, 60px)
+    grid-template-rows: repeat(6, 60px)
   }
 `
 
 export const SidebarLink = styled(LinkS)`
   display: flex;
-  align-item: center;
+  align-items: center;
   justify-content: center;
   font-size: 1.5rem;
   text-decoration: none;
