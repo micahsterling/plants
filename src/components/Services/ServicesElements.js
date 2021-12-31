@@ -69,3 +69,8 @@ export const ServicesH1= styled.h1`
     font-size: 2rem;
   }
 `
+
+export const ServicesP = styled.p`
+  font-size: 1rem;
+  text-align: center;
+`
