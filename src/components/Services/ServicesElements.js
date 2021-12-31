@@ -53,3 +53,10 @@ export const ServicesCard = styled.div`
     cursor: pointer
   }
 `
+
+export const ServicesIcon = styled.img`
+  height: 160px;
+  width: 160px;
+  margin-bottom: 10px;
+`
+
