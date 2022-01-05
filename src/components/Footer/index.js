@@ -1,4 +1,13 @@
 import React from 'react'
+import {
+  FooterContainer, 
+  FooterWrap, 
+  FooterLinksContainer, 
+  FooterLinksWrapper, 
+  FooterLinkItems, 
+  FooterLinkTitle, 
+  FooterLink} 
+  from './FooterElements'
 
 const Footer = () => {
   return (
@@ -14,7 +23,7 @@ const Footer = () => {
                   <FooterLink to="/signin">About us</FooterLink>
                   <FooterLink to="/signin">About us</FooterLink>
               </FooterLinkItems>
-                </FooterLinkTitle>
+              <FooterLinkItems>
                   <FooterLink to="/signin">contact us</FooterLink>
                   <FooterLink to="/signin">contact us</FooterLink>
               </FooterLinkItems>
