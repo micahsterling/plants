@@ -70,3 +70,14 @@ export const SocialMedia = styled.section`
   max-width: 1000px;
   width: 100%;
 `
+export const SocialMediaWrap = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: 40px auto 0 auto;
+
+  @media screen and (max-width: 820px) {
+    flex-direction: column;
+  }
+`
