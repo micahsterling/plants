@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaInstagram } from 'react-icons/fa'
+import { FaInstagram, FaYoutube } from 'react-icons/fa'
 import {
   FooterContainer, 
   FooterWrap, 
@@ -8,9 +8,11 @@ import {
   FooterLinkItems, 
   FooterLinkTitle, 
   FooterLink,
+  SocialMedia,
   SocialMediaWrap,
   SocialLogo,
   WebsiteRights,
+  SocailIcons,
   SocialIconLink,
 } 
   from './FooterElements'
@@ -35,20 +37,22 @@ const Footer = () => {
               </FooterLinkItems>
             </FooterLinksWrapper>
           </FooterLinksContainer>
-          <SocialMediaWrap>
-            <SocialLogo to='/'>
-              Plants
-            </SocialLogo>
-            <WebsiteRights>Plants {new Date().getFullYear()} All rights reserved</WebsiteRights>
-            <SocailIcons>
-              <SocialIconLink href="//" target="_blank" aria-label="Instagram">
-                <FaInstagram />
-              </SocialIconLink>
-              <SocialIconLink href="//www/youtube.com/" target="_blank" aria-label="Youtube">
-                <FaYoutube />
-              </SocialIconLink>
-            </SocailIcons>
-          </SocialMediaWrap>
+          <SocialMedia>
+            <SocialMediaWrap>
+              <SocialLogo to='/'>
+                Plants
+              </SocialLogo>
+              <WebsiteRights>Plants {new Date().getFullYear()} All rights reserved. </WebsiteRights>
+              <SocailIcons>
+                <SocialIconLink href="//" target="_blank" aria-label="Instagram">
+                  <FaInstagram />
+                </SocialIconLink>
+                <SocialIconLink href="//www/youtube.com/" target="_blank" aria-label="Youtube">
+                  <FaYoutube />
+                </SocialIconLink>
+              </SocailIcons>
+            </SocialMediaWrap>
+          </SocialMedia>
         </FooterWrap>
       </FooterContainer>
     </>
