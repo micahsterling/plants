@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from 'react'
+import { IconContext } from 'react-icons/lib'
 import {Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, NavBtn, NavBtnLink} from './NavbarElements'
 import {FaBars} from 'react-icons/fa'
 
@@ -19,6 +20,7 @@ const NavBar = ({ toggle }) => {
 
   return (
     <>
+    <IconContext.Provider value={{color: '#fff'}}>
       <Nav scrollNav={scrollNav}>
         <NavbarContainer>
           <NavLogo to='/'>Plants</NavLogo>
@@ -44,6 +46,7 @@ const NavBar = ({ toggle }) => {
             </NavBtn>
         </NavbarContainer>
       </Nav>
+    </IconContext.Provider>
     </>
   )
 }
