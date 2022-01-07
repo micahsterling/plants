@@ -2,6 +2,7 @@ import React, {useEffect, useState} from 'react'
 import { IconContext } from 'react-icons/lib'
 import {Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, NavBtn, NavBtnLink} from './NavbarElements'
 import {FaBars} from 'react-icons/fa'
+import { animateScroll as scroll } from 'react-scroll'
 
 const NavBar = ({ toggle }) => {
   const [scrollNav, setScrollNav] = useState(false)
@@ -18,12 +19,15 @@ const NavBar = ({ toggle }) => {
     window.addEventListener('scroll', changeNav)
   }, [])
 
+  const toggleHome = () => {
+    scroll.scrollToTop();
+  }
   return (
     <>
     <IconContext.Provider value={{color: '#fff'}}>
       <Nav scrollNav={scrollNav}>
         <NavbarContainer>
-          <NavLogo to='/'>Plants</NavLogo>
+          <NavLogo to='/' onClick={toggleHome}>Plants</NavLogo>
           <MobileIcon onClick={toggle}>
             <FaBars />
           </MobileIcon>
