@@ -26,7 +26,7 @@ const NavBar = ({ toggle }) => {
     <>
     <IconContext.Provider value={{color: '#fff'}}>
       <Nav scrollNav={scrollNav}>
-        <NavbarContainer>
+        <NavbarContainer oncick={toggle}>
           <NavLogo to='/' onClick={toggleHome}>Plants</NavLogo>
           <MobileIcon onClick={toggle}>
             <FaBars />
@@ -66,10 +66,19 @@ const NavBar = ({ toggle }) => {
               offset={-80}
               >
                 Services
-                </NavLinks>  
+              </NavLinks>  
             </NavItem>
             <NavItem>
-              <NavLinks to="activities">Activities</NavLinks>  
+              <NavLinks 
+              to="activities"
+              smooth={true} 
+              duration={500} 
+              spy={true} 
+              exact='true' 
+              offset={-80}
+              >
+                Activities
+              </NavLinks>  
             </NavItem>
           </NavMenu>
             <NavBtn>
