@@ -16,7 +16,13 @@ const HeroSection = () => {
       <HeroContent>
         <HeroH1>Come into the Shop</HeroH1>
         <HeroBtnWrapper>
-          <Button to='signup' onMouseEnter={onHover} onMouseLeave={onHover} primary='true' dark='true'>
+          <Button onMouseEnter={onHover} onMouseLeave={onHover} primary='true' dark='true'                 
+              to="discover"
+              smooth={true} 
+              duration={500} 
+              spy={true} 
+              exact='true' 
+              offset={-80}>
             Enter {hover ? <ArrowForward /> : <ArrowRight />}
           </Button>
         </HeroBtnWrapper>
