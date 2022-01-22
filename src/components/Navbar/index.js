@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react'
 import { IconContext } from 'react-icons/lib'
-import {Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, NavBtn, NavBtnLink} from './NavbarElements'
+import {Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks} from './NavbarElements'
 import {FaBars} from 'react-icons/fa'
 import { animateScroll as scroll } from 'react-scroll'
 
@@ -27,23 +27,11 @@ const NavBar = ({ toggle }) => {
     <IconContext.Provider value={{color: '#fff'}}>
       <Nav scrollNav={scrollNav}>
         <NavbarContainer oncick={toggle}>
-          <NavLogo to='/' onClick={toggleHome}>Plants</NavLogo>
+          <NavLogo to='/' onClick={toggleHome}>Terracotto Plants</NavLogo>
           <MobileIcon onClick={toggle}>
             <FaBars />
           </MobileIcon>
           <NavMenu>
-            <NavItem>
-              <NavLinks 
-              to="about"
-              smooth={true} 
-              duration={500} 
-              spy={true} 
-              exact='true' 
-              offset={-80}
-              >
-                About
-              </NavLinks>  
-            </NavItem>
             <NavItem>
               <NavLinks 
                 to="discover"
@@ -80,10 +68,22 @@ const NavBar = ({ toggle }) => {
                 Events
               </NavLinks>  
             </NavItem>
+            <NavItem>
+              <NavLinks 
+              to="about"
+              smooth={true} 
+              duration={500} 
+              spy={true} 
+              exact='true' 
+              offset={-80}
+              >
+                About
+              </NavLinks>  
+            </NavItem>
           </NavMenu>
-            <NavBtn>
+            {/* <NavBtn>
               <NavBtnLink to="/signin">Sign In</NavBtnLink>
-            </NavBtn>
+            </NavBtn> */}
         </NavbarContainer>
       </Nav>
     </IconContext.Provider>
