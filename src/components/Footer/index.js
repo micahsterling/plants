@@ -11,11 +11,12 @@ import {
   FooterLink,
   SocialMedia,
   SocialMediaWrap,
-  SocialLogo,
+  FooterTitle,
   WebsiteRights,
   SocailIcons,
   SocialIconLink,
   FooterText,
+  FooterRightsContainer,
 } 
   from './FooterElements'
 
@@ -27,9 +28,9 @@ const Footer = () => {
     <>
       <FooterContainer>
         <FooterWrap>
-              <SocialLogo to='/' onClick={toggleHome}>
+              <FooterTitle to='/' onClick={toggleHome}>
               Terracotto Plants
-              </SocialLogo>
+              </FooterTitle>
           <FooterLinksContainer>
             <FooterLinksWrapper>
               <FooterLinkItems>
@@ -68,7 +69,9 @@ const Footer = () => {
               </SocailIcons>
             </SocialMediaWrap>
           </SocialMedia>
-              <WebsiteRights>© {new Date().getFullYear()} Terracotto Plants. All rights reserved. </WebsiteRights>
+          <FooterRightsContainer>
+            <WebsiteRights>© {new Date().getFullYear()} Terracotto Plants. All rights reserved. </WebsiteRights>
+          </FooterRightsContainer>
         </FooterWrap>
       </FooterContainer>
     </>
