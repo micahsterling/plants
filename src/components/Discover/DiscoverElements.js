@@ -71,17 +71,29 @@ export const Heading = styled.h1`
 
 export const Subtitle = styled.p`
   max-width: 440px;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
   font-size: 20px;
   line-height: 24px;
   color: ${({darkText}) => (darkText ? '#010606' : '#fff')};
+  text-decoration: none;
 `
+
 export const SubText = styled.p`
   max-width: 440px;
   margin-bottom: 10px;
   font-size: 18px;
   line-height: 24px;
   color: ${({darkText}) => (darkText ? '#010606' : '#fff')};
+`
+
+export const Link = styled.a`
+  color: ${({darkText}) => (darkText ? '#010606' : '#fff')};
+  text-decoration: none;
+
+  &:hover {
+    color: #01bf71;
+    transition: 0.3s ease-out;
+  }
 `
 
 
