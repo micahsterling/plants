@@ -9,7 +9,7 @@ export const FooterWrap = styled.div`
   padding: 48px 24px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
   max-width: 1100px;
   margin: 0 auto;
@@ -54,16 +54,23 @@ export const FooterLinkTitle = styled.h1`
   margin-bottom: 16px;
 `
 
-export const FooterLink = styled(Link)`
+export const FooterLink = styled.a`
   color: #fff;
   text-decoration: none;
   margin-bottom: 0.5rem;
   font-size: 14px;
+  cursor: pointer;
 
   &:hover {
     color: #01bf71;
     transition: 0.3s ease-out;
   }
+`
+export const FooterText = styled.p`
+  color: #fff;
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+  font-size: 14px;
 `
 
 export const SocialMedia = styled.section`
@@ -72,7 +79,7 @@ export const SocialMedia = styled.section`
 `
 export const SocialMediaWrap = styled.div`
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   max-width: 1100px;
   margin: 40px auto 0 auto;
@@ -84,24 +91,24 @@ export const SocialMediaWrap = styled.div`
 
 export const SocialLogo = styled(Link)`
   color: #fff;
-  justify-self: start;
+  /* justify-self: start; */
   cursor: pointer;
   text-decoration: none;
-  align-items: center;
-  margin-bottom: 16px;
+  /* align-items: left; */
+  margin-bottom: 20px;
   font-weight: bold;
 `
 
 export const WebsiteRights = styled.small`
   color: #fff;
-  margin-bottom: 16px;
+  margin-top: 20px;
 `
 
 export const SocailIcons = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 240px;
+  width: 150px;
 `
 
 export const SocialIconLink = styled.a`
