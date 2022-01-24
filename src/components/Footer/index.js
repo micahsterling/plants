@@ -1,5 +1,6 @@
 import React from 'react'
-import { FaInstagram, FaYoutube } from 'react-icons/fa'
+import { animateScroll as scroll } from 'react-scroll'
+import { FaInstagram, FaSpotify, FaYoutube } from 'react-icons/fa'
 import {
   FooterContainer, 
   FooterWrap, 
@@ -18,20 +19,32 @@ import {
   from './FooterElements'
 
 const Footer = () => {
+  const toggleHome = () => {
+    scroll.scrollToTop();
+  }
   return (
     <>
       <FooterContainer>
         <FooterWrap>
+              <SocialLogo to='/' onClick={toggleHome}>
+              Terracotto Plants
+              </SocialLogo>
           <FooterLinksContainer>
             <FooterLinksWrapper>
               <FooterLinkItems>
                 <FooterLinkTitle>
-                  About us
+                  Address
                 </FooterLinkTitle>
-                  <FooterLink to="/signin">About us</FooterLink>
-                  <FooterLink to="/signin">About us</FooterLink>
+                  <FooterLink >
+                    3056 W Diversey Ave 
+                    <br />
+                    Chicago, IL 600647 
+                  </FooterLink>
               </FooterLinkItems>
               <FooterLinkItems>
+              <FooterLinkTitle>
+                  Store Hours
+                </FooterLinkTitle>
                   <FooterLink to="/signin">contact us</FooterLink>
                   <FooterLink to="/signin">contact us</FooterLink>
               </FooterLinkItems>
@@ -39,20 +52,20 @@ const Footer = () => {
           </FooterLinksContainer>
           <SocialMedia>
             <SocialMediaWrap>
-              <SocialLogo to='/'>
-                Plants
-              </SocialLogo>
-              <WebsiteRights>Plants {new Date().getFullYear()} All rights reserved. </WebsiteRights>
               <SocailIcons>
-                <SocialIconLink href="//" target="_blank" aria-label="Instagram">
+                <SocialIconLink href="//www.instagram.com/terracottoplants/" target="_blank" aria-label="Instagram">
                   <FaInstagram />
                 </SocialIconLink>
-                <SocialIconLink href="//www/youtube.com/" target="_blank" aria-label="Youtube">
+                <SocialIconLink href="//open.spotify.com/show/4VsESgmTcgICKJ0xXKLlFk" target="_blank" aria-label="Spotify">
+                  <FaSpotify />
+                </SocialIconLink>
+                <SocialIconLink href="//www.youtube.com/channel/UCvxkT72U71ItRoTnKnRVV1g/videos" target="_blank" aria-label="Youtube">
                   <FaYoutube />
                 </SocialIconLink>
               </SocailIcons>
             </SocialMediaWrap>
           </SocialMedia>
+              <WebsiteRights>© {new Date().getFullYear()} Terracotto Plants. All rights reserved. </WebsiteRights>
         </FooterWrap>
       </FooterContainer>
     </>
