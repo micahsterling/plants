@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const EventsContainer = styled.div`
   color: #fff;
+  display: flex;
   background: ${({lightBg}) => (lightBg ? '#f9f9f9' : '#010606')};
 
   @media screen and (max-width: 768px) {
@@ -11,7 +12,7 @@ export const EventsContainer = styled.div`
 export const EventsWrapper = styled.div`
   display: grid;
   z-index: 1;
-  height: 860px;
+  height: 620px;
   width: 100%;
   max-width: 1100px;
   margin-right: auto;
