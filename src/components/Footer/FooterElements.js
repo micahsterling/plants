@@ -77,6 +77,9 @@ export const FooterLink = styled.a`
     color: #01bf71;
     transition: 0.3s ease-out;
   }
+  @media screen and (max-width: 768px) {
+    color: #01bf71;
+  }
 `
 export const FooterText = styled.p`
   color: #fff;
