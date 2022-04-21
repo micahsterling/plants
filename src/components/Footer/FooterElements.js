@@ -9,7 +9,7 @@ export const FooterWrap = styled.div`
   padding: 48px 24px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
   /* align-items: center; */
   max-width: 1100px;
   margin: 0 auto;
@@ -21,6 +21,7 @@ export const FooterWrap = styled.div`
     cursor: pointer;
     text-decoration: none;
     align-items: center;
+    margin-left: 16px;
     margin-bottom: 20px;
     font-weight: bold;
     text-align: left;
@@ -28,7 +29,7 @@ export const FooterWrap = styled.div`
 
 export const FooterLinksContainer = styled.div`
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
 
   @media screen and (max-width: 768px) {
     padding-top: 32px; 
@@ -75,6 +76,9 @@ export const FooterLink = styled.a`
   &:hover {
     color: #01bf71;
     transition: 0.3s ease-out;
+  }
+  @media screen and (max-width: 768px) {
+    color: #01bf71;
   }
 `
 export const FooterText = styled.p`

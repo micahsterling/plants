@@ -40,7 +40,7 @@ const Footer = () => {
                   <FooterLink href="https://www.google.com/maps/dir//3056+W+Diversey+Ave,+Chicago,+IL+60647/@41.9322399,-87.7069416,17z/data=!4m9!4m8!1m0!1m5!1m1!1s0x880fcd7976e03411:0xf26f32d05783a912!2m2!1d-87.7047529!2d41.9322399!3e0" target="_blank" rel="noreferrer">
                     3056 W Diversey Ave 
                     <br />
-                    Chicago, IL 600647 
+                    Chicago, IL 60647 
                   </FooterLink>
               </FooterLinkItems>
               <FooterLinkItems>

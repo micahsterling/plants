@@ -22,7 +22,7 @@ export const DiscoverWrapper = styled.div`
 
 export const InfoRow = styled.div`
   display: grid;
-  grid-auto-columns: minmax(suto,1fr);
+  grid-auto-columns: minmax(auto,1fr);
   align-items: center;
   grid-template-areas: ${({imgStart}) => (imgStart ? `'col2 col1'` : `'col1 col2'`)};
 
@@ -77,7 +77,11 @@ export const Subtitle = styled.p`
   color: ${({darkText}) => (darkText ? '#010606' : '#fff')};
   text-decoration: none;
 `
-
+export const SubTextContainer = styled.div`
+  display: grid;
+  gap: .3rem;
+  grid-template-columns: .3fr .5fr;
+`
 export const SubText = styled.p`
   max-width: 440px;
   margin-bottom: 10px;
@@ -93,6 +97,9 @@ export const Link = styled.a`
   &:hover {
     color: #01bf71;
     transition: 0.3s ease-out;
+  }
+  @media screen and (max-width: 768px) {
+    color: #01bf71;
   }
 `
 
