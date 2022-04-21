@@ -4,7 +4,7 @@ import About from '../components/About'
 import Discover from '../components/Discover'
 import NavBar from '../components/Navbar'
 import Services from '../components/Services'
-// import Sidebar from '../components/Sidebar'
+import Sidebar from '../components/Sidebar'
 import Footer from '../components/Footer'
 import Events from '../components/Events'
 
@@ -16,7 +16,7 @@ const Home = () => {
   }
   return (
     <>
-      {/* <Sidebar isOpen={isOpen} toggle={toggle} /> */}
+      <Sidebar isOpen={isOpen} toggle={toggle} />
       <NavBar toggle={toggle} />
       <HeroSection />
       <Discover />
