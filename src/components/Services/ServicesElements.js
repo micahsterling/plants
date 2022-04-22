@@ -16,6 +16,10 @@ export const ServicesContainer = styled.div`
     height: 1300px;
   }
 `
+export const TopLineContainer = styled.div`
+  display: flex;
+  justify-content: left;
+`
 
 export const ServicesWrapper = styled.div`
   max-width: 1000px;
