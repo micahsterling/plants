@@ -1,5 +1,6 @@
 import React from 'react'
-import {ServicesContainer, ServicesH1, ServicesIcon, ServicesWrapper, ServicesCard, ServicesH2, ServicesP} from './ServicesElements'
+import {ServicesContainer,TextWrapper, TopLineContainer, ServicesH1, ServicesIcon, ServicesWrapper, ServicesCard, ServicesH2, ServicesP} from './ServicesElements'
+import { TopLine } from '../About/AboutElements';
 import Icon1 from '../../images/svg-1.svg';
 import Icon2 from '../../images/svg-1.svg';
 import Icon3 from '../../images/svg-1.svg'; 
@@ -8,7 +9,13 @@ import Icon3 from '../../images/svg-1.svg';
 const Services = () => {
   return (
     <ServicesContainer id="services">
+      <TextWrapper>
+
+      <TopLineContainer>
+        <TopLine>Services</TopLine>
+      </TopLineContainer>
       <ServicesH1>Our Services</ServicesH1>
+      </TextWrapper>
       <ServicesWrapper>
         <ServicesCard>
           <ServicesIcon src={Icon1} />
