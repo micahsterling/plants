@@ -74,6 +74,7 @@ export const Subtitle = styled.p`
   margin-bottom: 20px;
   font-size: 20px;
   line-height: 24px;
+  font-weight: ${({bold}) => (bold ? '600' : '0')};
   color: ${({darkText}) => (darkText ? '#010606' : '#fff')};
   text-decoration: none;
 `

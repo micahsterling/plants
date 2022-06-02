@@ -4,20 +4,28 @@ export const ServicesContainer = styled.div`
   height: 800px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  /* justify-content: left;
+  align-items: left; */
   background: #010606;
 
   @media screen and (max-width: 768px) {
-    height: 1100px;
+    height: 1200px;
   }
 
   @media screen and (max-width: 480px) {
     height: 1300px;
   }
 `
+export const TextWrapper = styled.div`
+  max-width: 540px;
+  padding-top: 100px;
+  padding-left: 15px;
+  margin-left: 200px;
+`
+
+
 export const TopLineContainer = styled.div`
-  display: flex;
+  display: grid;
   justify-content: left;
 `
 
