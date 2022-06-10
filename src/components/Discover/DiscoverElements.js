@@ -16,7 +16,7 @@ export const DiscoverWrapper = styled.div`
   max-width: 1100px;
   margin-right: auto;
   margin-left: auto;
-  padding: 0 24px;
+  padding: 0 20px;
   justify-content: center;
 `
 
@@ -31,7 +31,6 @@ export const InfoRow = styled.div`
   }
 `
 export const Column1 = styled.div`
-  margin-bottom: 15px;
   padding: 0 15px;
   grid-area: col1;
 `
@@ -44,8 +43,6 @@ export const Column2 = styled.div`
 export const TextWrapper = styled.div`
   max-width: 540px;
   padding-top: 0;
-  padding-bottom: 60px;
-
 `
 export const TopLine = styled.p`
   color: #01bf71;
@@ -80,12 +77,12 @@ export const Subtitle = styled.p`
 `
 export const SubTextContainer = styled.div`
   display: grid;
-  gap: .3rem;
-  grid-template-columns: .3fr .5fr;
+  gap: .5rem;
+  grid-template-columns: .3fr auto;
 `
 export const SubText = styled.p`
   max-width: 440px;
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
   font-size: 18px;
   line-height: 24px;
   color: ${({darkText}) => (darkText ? '#010606' : '#fff')};
@@ -119,4 +116,7 @@ export const Img = styled.img`
   width: 100%;
   margin: 0 0 10px;
   padding-right: 0;
+  @media screen and (min-width: 770px) {
+    padding-top: 145px
+  }
 `
