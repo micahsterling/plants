@@ -3,10 +3,6 @@ import styled from 'styled-components'
 export const DiscoverContainer = styled.div`
   color: #fff;
   background: ${({lightBg}) => (lightBg ? '#f9f9f9' : '#010606')};
-
-  @media screen and (max-width: 768px) {
-    padding: 100px 0;
-  }
 `
 export const DiscoverWrapper = styled.div`
   display: grid;
@@ -18,6 +14,13 @@ export const DiscoverWrapper = styled.div`
   margin-left: auto;
   padding: 0 20px;
   justify-content: center;
+  @media screen and (max-width: 768px) {
+    padding: 90px 0 0 0;
+  }
+  @media screen and (min-width: 770px) {
+    align-items: start;
+    padding-top: 80px;
+  }
 `
 
 export const InfoRow = styled.div`
@@ -113,10 +116,14 @@ export const ImgWrap = styled.div`
 `
 
 export const Img = styled.img`
-  width: 100%;
+  width: 80%;
   margin: 0 0 10px;
   padding-right: 0;
   @media screen and (min-width: 770px) {
-    padding-top: 145px
+    padding-top: 145px;
+    width: 100%;
+  }
+  @media screen and (max-width: 425px) {
+    width: 100%;
   }
 `
