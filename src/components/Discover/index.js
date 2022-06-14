@@ -10,11 +10,11 @@ import {
   TopLine,
   Heading,
   Subtitle,
+  Link,
+  SubTextContainer,
+  SubText,
   ImgWrap,
   Img,
-  SubText,
-  Link,
-  SubTextContainer
 } from './DiscoverElements'
 
 const Discover = () => {

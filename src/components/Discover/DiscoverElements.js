@@ -27,10 +27,10 @@ export const InfoRow = styled.div`
   display: grid;
   grid-auto-columns: minmax(auto,1fr);
   align-items: center;
-  grid-template-areas: ${({imgStart}) => (imgStart ? `'col2 col1'` : `'col1 col2'`)};
+  grid-template-areas: 'col1 col2';
 
   @media screen and (max-width: 768px) {
-    grid-template-areas: ${({imgStart}) => (imgStart ? `'col1' 'col2'` : `'col1 col1' 'col2 col2'` )}
+    grid-template-areas: 'col1 col1' 'col2 col2';
   }
 `
 export const Column1 = styled.div`
@@ -56,7 +56,6 @@ export const TopLine = styled.p`
   text-transform: uppercase;
   margin-bottom: 16px;
 `
-
 export const Heading = styled.h1`
   margin-bottom: 24px;
   font-size: 48px;
@@ -68,7 +67,6 @@ export const Heading = styled.h1`
     font-size: 32px;
   }
 `
-
 export const Subtitle = styled.p`
   max-width: 440px;
   margin-bottom: 20px;
@@ -78,6 +76,7 @@ export const Subtitle = styled.p`
   color: ${({darkText}) => (darkText ? '#010606' : '#fff')};
   text-decoration: none;
 `
+
 export const SubTextContainer = styled.div`
   display: grid;
   gap: .5rem;
@@ -85,7 +84,6 @@ export const SubTextContainer = styled.div`
 `
 export const SubText = styled.p`
   max-width: 440px;
-  /* margin-bottom: 10px; */
   font-size: 18px;
   line-height: 24px;
   color: ${({darkText}) => (darkText ? '#010606' : '#fff')};
@@ -104,17 +102,10 @@ export const Link = styled.a`
   }
 `
 
-
-export const BtnWrap = styled.div`
-  display: flex;
-  justify-content: flex-start;
-`
-
 export const ImgWrap = styled.div`
   max-width: 555px;
   height: 100%;
 `
-
 export const Img = styled.img`
   width: 80%;
   margin: 0 0 10px;
