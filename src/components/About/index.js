@@ -19,7 +19,7 @@ const About = () => {
     <>
       <InfoContainer lightBg={false} id='about'>
         <InfoWrapper>
-          <InfoRow imgStart={true}>
+          <InfoRow imgStart={false}>
             <Column1>
             <TextWrapper>
               <TopLine>About</TopLine>
