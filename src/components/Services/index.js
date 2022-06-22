@@ -1,5 +1,5 @@
 import React from 'react'
-import {ServicesContainer,TextWrapper, Column1, TopLineContainer, ServicesH1, ServicesIcon, ServicesWrapper, ServicesCard, ServicesH2, ServicesP} from './ServicesElements'
+import {ServicesContainer,TextWrapper, Column1, TopLineContainer, ServicesH1, ServicesIcon, ServicesWrapper, ServicesCard, ServicesH2, } from './ServicesElements'
 import { TopLine } from '../About/AboutElements';
 import Icon1 from '../../images/consultation.jpeg';
 import Icon2 from '../../images/plant.svg';
@@ -22,17 +22,17 @@ const Services = () => {
         <ServicesCard>
           <ServicesIcon src={Icon1} />
             <ServicesH2>In Home Consultation</ServicesH2>
-            <ServicesP>description of services</ServicesP>
+            {/* <ServicesP>description of services</ServicesP> */}
         </ServicesCard>
         <ServicesCard>
           <ServicesIcon src={Icon2} />
             <ServicesH2>Repotting Plants</ServicesH2>
-            <ServicesP>description of services</ServicesP>
+            {/* <ServicesP>description of services</ServicesP> */}
           </ServicesCard>
           <ServicesCard>
           <ServicesIcon src={Icon3} />
             <ServicesH2>Drilling holes in pots</ServicesH2>
-            <ServicesP>description of services</ServicesP>
+            {/* <ServicesP>description of services</ServicesP> */}
         </ServicesCard>
       </ServicesWrapper>
     </ServicesContainer>
