@@ -46,11 +46,11 @@ const Footer = () => {
               </FooterLinkItems>
               <FooterLinkItems>
                 <FooterLinkTitle>Store Hours</FooterLinkTitle>
-                <FooterText>Mon: 12pm - 6pm</FooterText>
-                <FooterText>Tue-Thur: 12pm - 7pm</FooterText>
-                <FooterText>Fri: 12pm - 8pm </FooterText>
-                <FooterText>Sat: 11am - 8pm </FooterText>
-                <FooterText>Sun: 11am - 6pm</FooterText>
+                <FooterText>Mon: 11am - 5:30pm</FooterText>
+                <FooterText>Tue-Thur: 11am - 6pm</FooterText>
+                <FooterText>Fri: 11pm - 7pm </FooterText>
+                <FooterText>Sat: 10am - 6pm </FooterText>
+                <FooterText>Sun: 10am - 6pm</FooterText>
               </FooterLinkItems>
             </FooterLinksWrapper>
           </FooterLinksContainer>
