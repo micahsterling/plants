@@ -42,15 +42,15 @@ const Discover = () => {
                 </Subtitle>
                 <SubTextContainer>
                   <SubText darkText={true}>Monday: </SubText>
-                  <SubText darkText={true}>12am - 5pm </SubText>
+                  <SubText darkText={true}>12pm - 5pm </SubText>
                   <SubText darkText={true}>Tuesday:</SubText>
-                  <SubText darkText={true}>12am - 6pm </SubText>
+                  <SubText darkText={true}>Closed </SubText>
                   <SubText darkText={true}>Wednesday:</SubText>
-                  <SubText darkText={true}>12am - 6pm </SubText>
+                  <SubText darkText={true}>12pm - 6pm </SubText>
                   <SubText darkText={true}>Thursday: </SubText>
-                  <SubText darkText={true}>12am - 6pm </SubText>
+                  <SubText darkText={true}>12pm - 6pm </SubText>
                   <SubText darkText={true}>Friday: </SubText>
-                  <SubText darkText={true}>12am - 6pm </SubText>
+                  <SubText darkText={true}>12pm - 6pm </SubText>
                   <SubText darkText={true}>Saturday: </SubText>
                   <SubText darkText={true}>10am - 6pm </SubText>
                   <SubText darkText={true}>Sunday:</SubText>
