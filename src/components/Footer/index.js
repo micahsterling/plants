@@ -47,8 +47,9 @@ const Footer = () => {
               <FooterLinkItems>
                 <FooterLinkTitle>Store Hours</FooterLinkTitle>
                 <FooterText>Mon: 12pm - 5pm</FooterText>
-                <FooterText>Tue: Closed</FooterText>
-                <FooterText>Wed-Fri: 12pm - 6pm</FooterText>
+                <FooterText>Tue: 12pm - 6pm</FooterText>
+                <FooterText>Wed: Closed</FooterText>
+                <FooterText>Thur-Fri: 12pm - 6pm </FooterText>
                 <FooterText>Sat: 10am - 6pm </FooterText>
                 <FooterText>Sun: 10am - 5pm</FooterText>
               </FooterLinkItems>
